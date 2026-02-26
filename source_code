@@ -1,0 +1,13 @@
+#!/bin/bash
+apt-get update
+apt-get upgrade
+apt-get install -y nginx
+systemctl start ngnix
+system enable ngnix
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+git clone https://github.com/debjyoti6/aws.git
+cd aws
+npm install
+node index.js
