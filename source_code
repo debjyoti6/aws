@@ -11,3 +11,14 @@ git clone https://github.com/debjyoti6/aws.git
 cd aws
 npm install
 node index.js
+proxy_pass http://localhost:4000;
+
+proxy_http version 1.1;
+
+proxy set header Upgrade $http_upgrade;
+
+proxy set header Connection 'Upgrade';
+
+proxy set header Host $host;
+
+proxy cache bypass $http_upgrade;
