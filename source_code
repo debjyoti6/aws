@@ -19,3 +19,13 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection 'Upgrade';
 proxy_set_header Host $host;
 proxy_cache_bypass $http_upgrade;
+
+
+git init
+git config --global user.name "Debjyoti"
+git config --global user.email "debjyotisantra6@email.com"
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/debjyoti6/new.git
+git branch -M main
+git push -u origin main
